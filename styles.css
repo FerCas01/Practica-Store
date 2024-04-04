@@ -1,11 +1,12 @@
-/*ENCABEZADO*/
 body,
 html {
     font-family: "Inter", sans-serif;
+    margin: 0;
 }
+/*ENCABEZADO*/
 header {
   background-color: #ff3b3c;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   height: 152px;
 }
 .search {
@@ -56,17 +57,56 @@ section {
     height: 340px;
   }
   main {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     height: auto;
   }
+  /*FOOTER*/
   footer {
-    border: 1px solid #009145; /* Hexadecimal color code*/
+    /*border: 1px solid #009145;
+    /* Hexadecimal color code*/
     min-height: 368px;
+    background-color: #7525a7;
+    border-radius: 5%;
+    padding: 2em;
   }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .columns-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+  }
+  .columns-container .col ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .columns-container .col ul li {
+    padding: 5px 0;
+  }
+  .columns-container .col ul li.col-main-item {
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .columns-container .col ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .copyright {
+    /*border-top: 1px solid #ba53fb;*/
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 30px 0;
+    box-sizing: border-box;
+  }
+  
   .container {
       width: 100%;
       margin: 0 auto;
-      border: 1px solid springgreen;
+      /*border: 1px solid springgreen;*/
       height: inherit;
       min-height: inherit;
   }
@@ -208,5 +248,12 @@ section {
     .title-container span:last-child {
       font-size: 60px;
       line-height: 80px; 
+    }
+    .columns-container {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      margin: 1em;
+      flex-wrap: wrap;
     }    
   }   
